@@ -1,10 +1,9 @@
-﻿{% load static %}
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Wingfield - Personal Portfolio</title>
+    <title>About - Tunis Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Template Google Fonts -->
@@ -35,20 +34,20 @@
     <script src="{%static 'js/modernizr.custom.js'%}"></script>
   </head>
 
-  <body class="home">
+  <body class="about">
     <!-- Header Starts -->
     <header class="header" id="navbar-collapse-toggle">
       <!-- Fixed Navigation Starts -->
       <ul
         class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1"
       >
-        <li class="icon-box active">
+        <li class="icon-box">
           <i class="fa fa-home"></i>
           <a href="index.html">
             <h2>Home</h2>
           </a>
         </li>
-        <li class="icon-box">
+        <li class="icon-box active">
           <i class="fa fa-user"></i>
           <a href="about.html">
             <h2>About</h2>
@@ -82,12 +81,12 @@
           <span></span>
           <span></span>
           <ul class="list-unstyled" id="menu">
-            <li class="active">
+            <li>
               <a href="index.html"
                 ><i class="fa fa-home"></i><span>Home</span></a
               >
             </li>
-            <li>
+            <li class="active">
               <a href="about.html"
                 ><i class="fa fa-user"></i><span>About</span></a
               >
@@ -113,10 +112,15 @@
       <!-- Mobile Menu Ends -->
     </header>
     <!-- Header Ends -->
-    <!-- Main Content Starts -->
+    <!-- Page Title Starts -->
+    <section
+      class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1"
+    >
+      <h1>ABOUT <span>ME</span></h1>
+      <span class="title-bg">Resume</span>
+    </section>
+    <!-- Page Title Ends -->
     {% block content %} {% endblock content %}
-    <!-- Main Content Ends -->
-
     <!-- Template JS Files -->
     <script src="{%static 'js/jquery-3.5.0.min.js'%}"></script>
     <script src="{%static 'js/preloader.min.js'%}"></script>
